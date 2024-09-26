@@ -1,0 +1,177 @@
+/* ---------------------------------------
+                 CSS Resting
+---------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+
+/* Remove list styles for ul and ol elements */
+
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default hyperlink styles */
+
+a {
+  text-decoration: none;
+color: inherit;
+}
+
+/* -------------------------------------
+                Gloabal Variable
+------------------------------------- */
+
+/* :root{
+   --primary-color: #007bff;
+  --secondary-color: #6c757d;
+
+} */
+
+/* -------------------------------------
+                Main CSS
+------------------------------------- */
+body{
+    background-color: black;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('bg.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main h1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(235, 32, 32);
+    margin: 20px auto;
+}
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.to-do{
+    width: 50%;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px 15px;
+}
+#input-task{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    display: block;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 0px 2px gray;
+}
+li{
+    width: 100%;
+    font-size: 1.7rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin-top: 18px;
+    position: relative;
+    border-radius: 6px;
+    user-select: none;
+}
+.btn img{
+    width: 20px;
+    text-align: center;
+}
+.btn{
+    border: 0;
+    outline: 0;
+    padding: 2px 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: ease all 0.3s;
+
+}
+.btn:hover{
+    background-color: gray;
+}
+.done{
+    text-decoration: line-through;
+    background-color: rgb(138, 137, 137) !important;
+    color: black;
+}
+
+@media (max-width: 700px) {
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    html{
+        font-size: 40%;
+    }
+    
+    .to-do{
+        width: 80%;
+        
+    }
+}
+@media (max-width: 350px) {
+    html{
+        font-size: 35%;
+    }
+    
+    .to-do{
+        width: 95%;
+        height: 100%;
+        
+    }
+    main{
+        background-color: black;
+    }
+}
+@media (max-width: 250px) {
+    html{
+        font-size:25%;
+    }
+    
+    .to-do{
+        width: 95%;
+        height: 100%;
+        
+    }
+    main{
+        background-color: black;
+    }
+}

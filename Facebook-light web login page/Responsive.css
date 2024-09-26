@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column
+    }
+
+    .container .left {
+        display: none;
+    }
+
+    .form-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 70vh;
+    }
+    .right h1{
+        display: block;
+    }
+
+}

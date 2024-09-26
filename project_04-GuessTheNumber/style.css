@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #212121;
+    color: #fff;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#wrapper h1{
+    font-size: 2.5rem;
+    color: rgb(247, 181, 1); 
+    text-align: center;   
+}
+#wrapper p{
+    text-align: center; 
+    font-weight: bolder; 
+    color: cyan; 
+}
+span .guesses{
+    width: 10px;
+    height: 15px;
+    background-color: white;
+}
+label{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: rgb(247, 181, 1);
+    letter-spacing: 1px;
+}
+#guessField{
+    width: 250px;
+    height: 35px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.1rem;
+    outline: none;
+    border: 2px solid rgb(247, 181, 1);
+    margin: 10px 0px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+
+}
+#subt{
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: rgb(247, 181, 1);
+    background-color: black;
+    padding: 12px 8px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#subt:hover{
+    background-color: transparent;
+    border: 2px solid rgb(247, 181, 1);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
